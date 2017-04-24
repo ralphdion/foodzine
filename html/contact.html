@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact -- Le webzine des foodies</title>
+    <meta name="description" content="Magazine électronique pour les passionnés de la cuisine et de la santé.">
+    <meta name="keywords" content="foodies, recettes">
+    <meta name="author" content="Ralph Dion">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images_html/favicon_foodies.png" />
+</head>
+<body class="page-contact">
+    <header>
+<!--NAVIGATION PRINCIPALE-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Foodzine</a></li>
+                <li><a href="archives.html">Archives</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+<!--HÉRO-->
+      <div class="hero-contact">
+        <h1>Le webzine des foodies</h1>
+      </div>
+    </header>
+<!--ARTICLES-->
+    <main>
+    <div class="bloc-titre">
+      <h2>Besoin de conseils?</h2>
+      <h3>Contactez-nous</h3>
+    </div>
+    <article>
+        <form>
+            <fieldset>
+                <legend>Identification</legend>
+                <ul>
+                  <li><label for="nom">Nom</label>
+                  <input type="text" name="nom" id="nom"></li>
+                  <li><label for="prenom">Prénom</label>
+                  <input type="text" name="prenom" id="prenom"></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Adresse</legend>
+                <ul>
+                  <li><label for="rue">Rue</label>
+                  <input type="text" name="rue" id="rue"></li>
+                  <li><label for="ville">Ville</label>
+                  <input type="text" name="ville" id="ville"></li>
+                  <li><label for="province">Province</label>
+                  <select name="liste_prov" id="province">
+                      <option value="quebec">Québec</option>
+                      <option value="alberta">Alberta</option>
+                      <option value="colbrit">Colombie-Britanique</option>
+                      <option value="ipe">Île-Du-Prince-Édouard</option>
+                      <option value="manitoba">Manitoba</option>
+                      <option value="nbrunswick">Nouveau-Brunswick</option>
+                      <option value="necosse">Nouvelle-Écosse</option>
+                      <option value="ontario">Ontario</option>
+                      <option value="saskatchewan">Saskatchewan</option>
+                      <option value="tnlabrador">Terreneuve-Labrador</option>
+                  </select></li>
+                <li><label for="code_postal">Code postal</label>
+                <input type="text" name="code_postal" id="code_postal"></li>
+                <li><label for="courriel">Courriel</label>
+                <input type="email" name="courriel" id="courriel"></li>
+              </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Langue de communication</legend>
+                <label for="fr">Français</label>
+                <input type="radio" name="langue" value="fr" id="fr">
+                <label for="en">Anglais</label>
+                <input type="radio" name="langue" value="en" id="en">
+            </fieldset>
+
+            <fieldset>
+                <legend>J'aimerais de l'information par rapport aux rubriques suivantes</legend>
+                <ul>
+                    <li>
+                        <label for="sante">Santé et bien être</label>
+                        <input type="checkbox" name="rubrique" value="sante" id="sante">
+                    </li>
+                    <li>
+                        <label for="vege">Cuisine végétarienne</label>
+                        <input type="checkbox" name="rubrique" value="vege" id="vege">
+                    </li>
+                    <li>
+                        <label for="patisserie">Pâtisserie</label>
+                        <input type="checkbox" name="rubrique" value="patisserie" id="patisserie">
+                    </li>
+                    <li>
+                        <label for="bbq">Barbecue et grillades</label>
+                        <input type="checkbox" name="rubrique" value="bbq" id="bbq">
+                    </li>
+                    <li>
+                        <label for="mijoteuse">Mijoteuse et cuisson lente</label>
+                        <input type="checkbox" name="rubrique" value="mijoteuse" id="mijoteuse">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Expliquez-nous brièvement votre question</legend>
+                <textarea name="equipe"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Faites nous parvenir une image de vos recettes</legend>
+                <input type="file" name="image">
+            </fieldset>
+            <input class="btn-envoyer"type="submit" value="envoyer">
+        </form>
+    </article>
+    </main>
+<!--PIED DE PAGE-->
+<footer>
+    <p><a class="media-sociaux facebook-btn" href="facebook.com"></a> <a class="media-sociaux twitter-btn"href="twitter.com"></a></p>
+    <form>
+        <label for="courriel_pp">Abonnez-vous à notre infolettre:</label>
+        <input type="email" name="courriel_pp" id="courriel_pp">
+        <input type="submit" value="Envoyer">
+    </form>
+</footer>
+</body>
+
+</html>
